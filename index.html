@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="The Cruz Law Office">
+        
+        <title>The Cruz Law Office</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="manifest" href="manifest.json">
+         <link rel="icon" sizes="96x96" href="img/manifest/launcher-icon-2x.png">
+        <link rel="icon" sizes="144x144" href="img/manifest/launcher-icon-3x.png">
+        <link rel="icon" sizes="192x192" href="img/manifest/launcher-icon192x192.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/manifest/launcher-icon-3x.png">
+     </head>
+ <body>
+     <header class="floater">
+         <h1 class="logo-name">The Cruz Law APC</h1>
+         <span class="phone"><a href="tel: 619 717 2233">619 717 2233</a></span>
+          
+     </header>
+       <div class="brand"></div>
+     <header class="welcome">
+       <img src="img/coffee_key.jpg" alt="The Cruz Law Office Team with principal Narciso Delgado Cruz">  
+     </header>
+     <div class="sub-header" lang="es">
+         <h3 class="center">Defensa de Deportación</h3>
+     </div>
+        <div class="unit-row">
+        <div class="unit-one">
+         <h4 class="intro-blurb">Informese de sus derechos ante un official de inmigración (agente de ICE) Llamenos para una evaluación sin compromiso.</h4>
+         <p><a href="#0" class="btn call-btn">Asesoria en 5 minutos</a></p>
+         <p><a href="#0" class="btn call-btn">Evaluación Gratuita</a></p>
+         </div>
+         </div>
+     
+     <footer class="footer">   
+         <video controls width="100%" height="100%"  poster="img/narciso.jpg">
+  <source src="http://demo.inwebson.com/html5-video/iceage4.mp4" type="video/mp4" />
+  <source src="http://demo.inwebson.com/html5-video/iceage4.ogg" type="video/ogg" />
+  <source src="http://demo.inwebson.com/html5-video/iceage4.webm" type="video/webm" />
+</video>
+         <p class="fb-follow-btn"><a href="https://www.facebook.com/The-Cruz-Law-Office-APC-562674667099684/">Síguenos en Facebook</a></p>    
+         <p class="copy-rights"><span class="build-by">Made in 92101 by <a href="http://brandigniter.org/">Brandigniter</a></span><span><a href="#">The Cruz Law Office APC</a></span> &copy; 2016 </p> 
+     </footer>
+     <script src="js/app.js"></script>
+     <script src="service-worker.js"></script>
+     <script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("Oh no!it didn't. This happened: ", err)
+      });
+  }
+</script>
+ </body>     
+</html>
